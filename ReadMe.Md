@@ -1,0 +1,1 @@
+docker login --username=${EMAIL} registry-intl.cn-hangzhou.aliyuncs.com
