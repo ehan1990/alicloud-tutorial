@@ -7,9 +7,6 @@ IMAGE_NAME=registry-intl.cn-hangzhou.aliyuncs.com/${NAMESPACE}/nginx-alpine-tuto
 build-image:
 	docker build -f Dockerfile -t ${IMAGE_NAME} .
 
-deploy:
-	quake -f app.toml up
-
 run-local:
 	docker run --name ${CONTAINER_NAME} --rm -p 8080:80 ${IMAGE_NAME}
 
