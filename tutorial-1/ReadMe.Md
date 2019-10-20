@@ -18,8 +18,22 @@ Go to container registry console, and create a namespace. You can call it anythi
 
 #### Step 4:
 Open your bash terminal and login to your docker registry. 
+
 E.g. Assuming that you're using Hangzhou's DC, your login command should look something like this:
+
 `docker login --username=${EMAIL} registry-intl.cn-hangzhou.aliyuncs.com`
 
 #### Step 5:
 Clone this repo (e.g. `git clone https://github.com/ehan1990/alicloud-tutorial.git`)
+
+#### Step 6:
+cd to tutorial-1
+
+`cd alicloud-tutorial/tutorial-1`
+
+#### Step 6:
+Learn some of the useful commands I wrote in the Makefile.
+
+`make build-image` builds the docker image using alpine as the base image. It's ~25MB.
+
+`make run-local`
